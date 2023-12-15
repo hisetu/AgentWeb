@@ -79,13 +79,6 @@ public class AgentWebConfig {
         return CookieManager.getInstance() == null ? null : CookieManager.getInstance().getCookie(url);
     }
 
-    public static void debug() {
-        DEBUG = true;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            WebView.setWebContentsDebuggingEnabled(true);
-        }
-    }
-
     /**
      * 删除所有已经过期的 Cookies
      */
